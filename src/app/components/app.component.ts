@@ -30,7 +30,8 @@ export class AppComponent implements OnInit {
     isDarkTheme: boolean = false;
 
     ngOnInit() {
-        //check authentication
+        const remote = require('electron').remote;
+        console.debug(remote.process.argv);
     }
 
     checkAuthentication() { }

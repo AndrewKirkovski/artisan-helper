@@ -1,6 +1,6 @@
 "use strict";
 
-var packager = require('electron-packager');
+const packager = require('electron-packager');
 const pkg = require('./package.json');
 const argv = require('minimist')(process.argv.slice(2));
 const devDeps = Object.keys(pkg.devDependencies);

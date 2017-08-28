@@ -1,7 +1,7 @@
 /**
  * Import decorators and services from angular
  */
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 /**
  * Import the ngrx configured store

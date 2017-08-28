@@ -4,7 +4,7 @@ export enum LayerModeType {
     THRESHOLD_INVERTED = 'threshold_inverted',
 }
 
-export class LayerMode {
+export interface LayerMode {
     type: LayerModeType;
     blinking: boolean;
     blinkInterval: number;
@@ -12,7 +12,7 @@ export class LayerMode {
     grayscale: boolean;
 }
 
-export default class PictureLayer {
+export interface PictureLayer {
     path: string;
     mode: LayerMode;
 }

@@ -25,7 +25,7 @@ import { AppComponent } from './components/app.component';
 /**
  * Import material UI Components
  */
-import { MdButtonModule, MdSlideToggleModule } from '@angular/material';
+import {MdButtonModule, MdSliderModule, MdSlideToggleModule, MdToolbarModule, MdToolbarRow} from '@angular/material';
 
 import { routes } from './app.routes';
 
@@ -44,7 +44,9 @@ import { Authentication } from './services/authentication';
         ReactiveFormsModule,
         HttpModule,
         BrowserAnimationsModule,
+        MdToolbarModule,
         MdButtonModule,
+        MdSliderModule,
         MdSlideToggleModule,
         RouterModule.forRoot(routes, { useHash: true }),
         StoreModule.provideStore({ authStore }, { authStore: authInitialState }),

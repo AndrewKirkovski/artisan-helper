@@ -80,6 +80,11 @@ var config = {
                 loader: 'raw-loader',
                 exclude: [helpers.root('app/index.html')]
             },
+            {
+                test: /\.css$/,
+                loader: 'raw-loader',
+                exclude: [helpers.root('app/index.html')]
+            },
 
             // support for fonts
             {

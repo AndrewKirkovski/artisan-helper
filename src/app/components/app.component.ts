@@ -106,10 +106,10 @@ export class AppComponent implements OnInit {
     empty: boolean = false;
 
     threshold: number = 50;
-    blinkInterval: number = 10;
-    rotate: number = 0;
+    blinkInterval: number = 5;
+    rotate: number = -0.5;
     perspective: number = 200;
-    anglePerspective: number = -1;
+    anglePerspective: number = 1;
 
     top: number = 390;
     left: number = 200;
@@ -117,7 +117,7 @@ export class AppComponent implements OnInit {
     activeLayer: number = 0;
     layers: PictureLayer[] = [];
 
-    width: number = 500;
+    width: number = 700;
 
     cachedMode: LayerMode;
 

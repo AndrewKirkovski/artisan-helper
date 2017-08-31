@@ -18,14 +18,15 @@ import { authStore, authInitialState } from './store/auth.store';
 /**
  * Import our child components
  */
-import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './components/home/home.component';
 import { AppComponent } from './components/app.component';
 
 /**
  * Import material UI Components
  */
-import {MdButtonModule, MdSliderModule, MdSlideToggleModule, MdToolbarModule, MdToolbarRow} from '@angular/material';
+import {
+    MdButtonModule, MdInputModule, MdSliderModule, MdSlideToggleModule, MdToolbarModule,
+    MdToolbarRow
+} from '@angular/material';
 
 import { routes } from './app.routes';
 
@@ -33,6 +34,7 @@ import { routes } from './app.routes';
  * Import the authentication service to be injected into our component
  */
 import { Authentication } from './services/authentication';
+import PictureComponent from "./components/picture";
 
 /*
  * provide('AppStore', { useValue: appStore }),
@@ -45,6 +47,7 @@ import { Authentication } from './services/authentication';
         HttpModule,
         BrowserAnimationsModule,
         MdToolbarModule,
+        MdInputModule,
         MdButtonModule,
         MdSliderModule,
         MdSlideToggleModule,
@@ -52,7 +55,7 @@ import { Authentication } from './services/authentication';
         StoreModule.provideStore({ authStore }, { authStore: authInitialState }),
     ],
     providers: [Authentication],
-    declarations: [AppComponent, HomeComponent, LoginComponent],
+    declarations: [AppComponent, PictureComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

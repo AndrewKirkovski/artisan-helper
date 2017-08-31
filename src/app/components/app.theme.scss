@@ -47,3 +47,27 @@ $theme: mat-light-theme($primary, $accent);
     display: none;
   }
 }
+
+.picture {
+  position: absolute;
+  display: inline-block;
+  background: lightgray;
+  left: 0;
+  top: 0;
+  perspective-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  img, canvas {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+input.mat-input-element {
+  width: 70px;
+  text-align: center;
+}
